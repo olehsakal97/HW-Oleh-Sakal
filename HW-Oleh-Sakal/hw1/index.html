@@ -7,25 +7,92 @@
     <title>Document</title>
 </head>
 <body>
-git config --global user.name blabla
-git config --global user.email blabal@bla
-git init
-git status
-git add
-git commit
-git log
-git checkout
-git branch
-git push
-git pull
-git merge
-git clone
-.gitignore нужен для скрытия файлов и папок от системы контроля версий Git. Обычно скрывают конфигурационные файлы (особенно с паролями), временные файли и папки.
+    <h1>Homework #1</h1>
+    <ul>
+        <li>
+             git config --global user.name blabla - This command sets the author name respectively to be used with your commits.
+        </li>
+        <li>
+            git config --global user.email blabal@bla - This command sets the author email address respectively to be used with your commits.
+        </li>
+        <li> 
+            git init - This command is used to start a new repository.
+        </li>
+        <li>
+            git status - This command lists all the files that have to be committed.
+        </li>
+        <li>
+            git add - This command adds a file to the staging area.
+            This command adds one or more to the staging area.
+        </li>
+        <li>
+            git commit - Usage: git commit -m “Message”: This command records or snapshots the file permanently in the version history.
+            Usage: git commit -a: This command commits any files you’ve added with the git add command and also commits any files you’ve changed since then.
+        </li>
+        <li>
+            git log – follow [file] - This command is used to list the version history for the current branch.
+            This command lists version history for a file, including the renaming of files also
+        </li>
 
-<p>
+        <li>
+            git checkout - Usage: git checkout [branch name]: This command is used to switch from one branch to another.
+            Usage: git checkout -b [branch name]: This command creates a new branch and also switches to i
+        </li>
+
+        <li>
+            git branch - This command lists all the local branches in the current repository.
+            Usage: git branch [branch name]: This command creates a new branch.
+            Usage: git branch -d [branch name]: This command deletes the feature branch.
+        </li>
+
+        <li>
+            git push - Usage: git push [variable name] master: This command sends the committed changes of master branch to your remote repository.
+            Usage: git push [variable name] [branch]: This command sends the branch commits to your remote repository.
+            Usage: git push –all [variable name]: This command pushes all branches to your remote repository
+        </li>
+
+        <li>
+            git pull - Usage: git pull [Repository Link]: This command fetches and merges changes on the remote server to your working directory.
+        </li>
+        <li>
+            git merge - Usage: git merge [branch name]:This command merges the specified branch’s history into the current branch.
+        </li>
+        <li>
+            git clone - This command is used to obtain a repository from an existing URL.
+        </li>
+
+        <li>
+            .gitignore - file specifies intentionally untracked files that Git should ignore.
+        </li>    
+    </ul>
+
+<h3>
     Advanced
-</p>
+</h3>
+    <ul>
+        <li>
+            git revert - The "revert" command helps you undo an existing commit. It's important to understand that it does not delete any data in this process: instead, Git will create new changes with the opposite effect - and thereby undo the specified old commit.
+        </li>
+        <li>
+            git reset - Usage: git reset [file]: This command unstages the file, but it preserves the file contents.
+            Usage: git reset [commit]: This command undoes all the commits after the specified commit and preserves the changes locally.
+            Usage: git reset –hard [commit]: This command discards all history and goes back to the specified commit.
+        </li>
 
+        <li>
+            git rebase - The rebase command integrates changes from one branch into another. It is an alternative to the better known "merge" command. Most visibly, rebase differs from merge by rewriting the commit history in order to produce a straight, linear succession of commits.
+        </li>
+
+        <li>
+            git cherry-pick - Git cherry-pick is a powerful command that enables arbitrary Git commits to be picked by reference and appended to the current working HEAD. Cherry picking is the act of picking a commit from a branch and applying it to another. git cherry-pick can be useful for undoing changes
+        </li>
+        <li>
+            git stash - Usage: git stash save: This command temporarily stores all the modified tracked files.
+            Usage: git stash pop: This command restores the most recently stashed files.
+            Usage: git stash list: This command lists all stashed changesets.
+            Usage: git stash drop: This command discards the most recently stashed changeset.
+        </li>
+    </ul>
 git revert
 git reset
 git rebase
