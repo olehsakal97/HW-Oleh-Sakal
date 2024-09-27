@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.first-block {
+    background-color: #0B2239;
+    padding: 18px 120px;
+    color: #fff;
+    height: 72px;
+    margin-bottom: 24px;
+}
+
+.first-block-href1 {
+    display: inline-block;
+    text-decoration: underline;
+    color: #4AD295;
+    cursor: pointer;
+}
+
+.first-block-href2 {
+    display: inline-block;
+    width: 130px;
+    height: 36px;
+    border-radius: 2px;
+    background-color: #4AD295;
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 8px 10px 0 10px;
+    text-align: center;
+}
+    
